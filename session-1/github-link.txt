@@ -1,0 +1,2 @@
+https://hub.docker.com/repository/docker/ishansoni0863/order-service
+https://hub.docker.com/repository/docker/ishansoni0863/inventory-service
