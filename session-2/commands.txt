@@ -1,0 +1,4 @@
+docker network create --driver bridge coffee-network
+docker network ls
+docker run --name inventory-service -p 8082:8082 --network coffee-network inventory-service
+docker run --name order-service -p 8080:8080 --network coffee-network -e INVENTORY_URL=http://inventory-service:8082 order-service
